@@ -91,7 +91,7 @@ export default function AgentPanel({ currentStep, stepResults, isLoading }) {
           const result = stepResults?.[agent.id];
           const isActive = currentStep === agent.id && isLoading;
           const isDoneStep = result?.status === "done";
-          const isPending = !isActive && !isDoneStep;
+          
 
           return (
             <div
